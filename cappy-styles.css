@@ -13,7 +13,7 @@ html, body {
 }
 
 .content {
-    background-color: rgba(0, 0, 0, 0.8); /* Ensure background is dark but slightly transparent */
+    background-color: rgba(0, 0, 0, 0.8); 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -23,30 +23,30 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #FFF; /* Text color is white for high contrast */
+    color: #FFF; 
 }
 
 /* Improved Form Group Styling for Better Spacing */
 .form-group {
     width: 100%;
     margin-bottom: 20px;
-    display: flex; /* Ensures flexbox layout */
-    flex-direction: column; /* Stacks children vertically */
-    align-items: center; /* Centers children horizontally */
-    text-align: center; /* Ensures text within the form group is centered */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
 }
 
 /* Input Field Styling with Increased Visibility */
 input[type="text"] {
-    width: 80%; /* Adjust width if necessary to suit design, less than 100% to see border effects */
-    padding: 15px; /* Comfortable padding inside input fields */
-    margin-top: 10px; /* Ensures space between label and input */
+    width: 80%; 
+    padding: 15px; 
+    margin-top: 10px; 
     border-radius: 5px;
-    border: 2px solid #00c6ff; /* Stylish border color that stands out */
-    background: rgba(255, 255, 255, 0.8); /* Light background for text field */
-    color: #000; /* Dark text for high contrast on light background */
-    font-size: 18px; /* Larger font for easy readability */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: 2px solid #00c6ff; 
+    background: rgba(255, 255, 255, 0.8); 
+    color: #000; 
+    font-size: 18px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 input[type="text"]:focus {
@@ -57,7 +57,7 @@ input[type="text"]:focus {
 
 /* Button Styling with Visual Enhancements */
 button {
-    width: 80%; /* Matching input width for visual consistency */
+    width: 80%; 
     padding: 12px;
     background: linear-gradient(to right, #00c6ff, #0072ff);
     color: white;
@@ -81,19 +81,19 @@ button:hover {
     margin-top: 25px;
     font-size: 20px;
     font-weight: bold;
-    color: #ADE8F4; /* Bright blue for visibility and aesthetic appeal */
+    color: #ADE8F4; 
 }
 
 #main-output, #capybara-comparison {
-    color: #ADE8F4; /* Light blue for visibility against a dark background */
-    font-size: 16px; /* Consistent font size for readability */
+    color: #ADE8F4; 
+    font-size: 16px; 
     text-align: center;
-    list-style-type: none; /* No bullets for the list */
+    list-style-type: none; 
     padding: 0;
     margin-top: 10px;
-    display: none; /* Initially hidden */
+    display: none; 
 }
 
 li {
-    margin: 5px 0; /* Spacing between list items */
+    margin: 5px 0; 
 }
