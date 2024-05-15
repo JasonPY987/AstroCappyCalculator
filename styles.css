@@ -1,0 +1,118 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Orbitron', sans-serif; /* A futuristic font */
+}
+
+body {
+    color: #E0E0E0; /* Light gray for better visibility */
+    background-color: rgba(5, 5, 30, 0.85); /* Deep blue semi-transparent */
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7); /* Soft white glow */
+}
+
+
+.video-background video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+.content {
+    position: relative;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Max width to ensure the form doesn't get too wide on larger screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Optional: background to enhance readability */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgb(84, 65, 225); /* Soft shadow for depth */
+    text-align: center; /* Ensure text is centered within each element */
+}
+
+
+input[type="text"], select {
+    padding: 12px 20px; /* Increase padding for a better user interaction */
+    margin-top: 8px; /* Maintain spacing for clarity */
+    width: 100%; /* Full width to use the space effectively */
+    max-width: 300px; /* Restrict maximum width for aesthetics */
+    border: 1px solid #ccc;
+    background: rgb(0, 0, 0); 
+    border-radius: 5px;
+    font-size: 20px; /* Larger font size for readability */
+    color: #ffffff; /* Ensuring light color text */
+    text-align: center; /* Center text inside inputs and selects */
+    box-shadow: 0 0 15px 3px rgba(0, 255, 255, 0.75); /* Maintain the glow effect */
+}
+
+
+button {
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: #E0E0E0;
+    border: none;
+    padding: 15px 32px;
+    font-size: 20px; /* Increased font size for button text */
+    margin-top: 20px; /* Space before the button */
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.75); /* Maintain the glow effect */
+    width: auto; /* Adjust width to content */
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    box-shadow: 0 0 25px 7px rgba(0, 255, 255, 1); /* Brighter glow on hover */
+}
+
+
+#output {
+    margin-top: 20px;
+    font-size: 18px; 
+    font-weight: bold;
+    color: #ADE8F4; 
+    width: 100%; 
+    text-align: center; 
+}
+
+
+@media (max-width: 600px) {
+    .content {
+        padding: 15px;
+        width: 95%; 
+    }
+
+    input[type="text"], select, button {
+        width: 100%; 
+    }
+}
+
+#floating-capybara {
+    display: block;
+    position: fixed; 
+    width: 150px; 
+    height: auto;
+    z-index: 1000; 
+}
+
+#floating-capybara img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
