@@ -7,10 +7,8 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('assets/images/cappybara_supremacy.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; /* Prevents the background image from repeating */
 }
 .content {
     background-color: rgba(0, 0, 0, 0.8); 
